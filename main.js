@@ -56,3 +56,52 @@ for (let i = 0; i < customer_sq.length; i++) {
     
   });
 }
+
+
+
+var sections = document.querySelectorAll('.languages');
+
+for (let i = 0; i < sections.length; i++) {
+  sections[i].style.display = "none";
+}
+
+var sec = document.querySelectorAll(' .show');
+
+for (let i = 0; i < sec.length; i++) {
+  sec[i].addEventListener("click", function () {
+    for (let j = 0; j < sections.length; j++) {
+
+      sec[j].style.color = "black";
+      sections[j].style.display = "none";
+
+    }
+
+    sections[i].style.display = "block";
+    sec[i].style.color="#ac45d8";
+  });
+}
+
+// var special= document.getElementsByClassName(" special");
+
+// special.style.display = "block";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
